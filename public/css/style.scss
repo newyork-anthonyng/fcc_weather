@@ -1,0 +1,48 @@
+$background_color: #f0f8ff;
+$background_color_small: #faf0e6;
+$small_breakpoint: 500px;
+
+body {
+  background-color: $background_color;
+  text-align: center;
+
+  @media (max-width: $small_breakpoint) {
+    background-color: $background_color_small;
+  }
+}
+
+h1 {
+  margin-top: 2em;
+}
+
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.background {
+  width: 20%;
+  margin: 0 auto;
+
+  @media (max-width: $small_breakpoint) {
+    width: 50%;
+  }
+
+  img {
+    width: 50%;
+
+    @media (max-width: $small_breakpoint) {
+      width: 100%;
+    }
+  }
+}
+
+.container div {
+  font-size: 24px;
+  margin-top: 1em;
+}
+
+.convert-temperature {
+  color: blue;
+  cursor: pointer;
+}

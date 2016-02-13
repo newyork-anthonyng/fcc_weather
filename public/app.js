@@ -60,7 +60,10 @@ function updateDisplay(location, description, temperature, error) {
 }
 
 function fahrenheitToCelsius(fahrenheit) {
-  return fahrenheit * (5/9) - 32;
+  var celsius = fahrenheit * (5/9) - 32;
+
+  // format celsius to one decimal place
+  return Math.round(celsius * 10) / 10;
 }
 
 function convertTemperature() {
@@ -85,7 +88,7 @@ function convertTemperature() {
 function updateBackground(description) {
   $background_image = $('.background img');
 
-  switch(description) {
+  switch(description.toLowerCase()) {
     case 'clouds':
       $background_image.attr('src', './assets/clouds.png');
       break;
