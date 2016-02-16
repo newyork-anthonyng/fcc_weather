@@ -1,7 +1,7 @@
 ## Local Weather App
 This is an intermediate front-end development project for freecodecamp.com.
 
-## Not yet hosted online
+## Hosted on [Heroku](http://fcc-weather.herokuapp.com/)
 
 ## Tools Used
 jQuery, HTML, SASS/CSS, Open Weather API
